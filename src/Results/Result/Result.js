@@ -20,7 +20,7 @@ export class Result extends React.Component {
 
   render() {
       return (
-        <li className='result'>
+        <div className='result'>
           <div className='description'>
               <p className='date'>
                   Tirage du { this.props.resultset.weekday.toLowerCase() } { this.props.resultset.date }
@@ -38,7 +38,7 @@ export class Result extends React.Component {
             <div className='star'>{ this.props.resultset.e2 }</div>
           </div>
           <div>Code MyMillion : { this.props.resultset.myMillion }</div>
-        </li>
+        </div>
       )
   }
 

@@ -23,7 +23,7 @@ export class Results extends React.Component {
       return (
           <ul>
               {this.state.results.map(result => {
-                  return <Result resultset={result} />
+                  return <li><Result resultset={result} /></li>
               })
               } 
           </ul>
