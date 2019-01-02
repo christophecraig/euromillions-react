@@ -1,5 +1,5 @@
 import React from 'react';
-import { Result } from './Result/Result'
+import { Result } from './Result/Result';
 
 export class Results extends React.Component {
   constructor() {
@@ -17,13 +17,10 @@ export class Results extends React.Component {
   }
 
   render() {
-      console.log(this.state.results);
-      
-      
       return (
           <ul>
               {this.state.results.map(result => {
-                  return <li><Result resultset={result} /></li>
+                  return <li key={result.id} ><Result resultset={result} /></li>
               })
               } 
           </ul>

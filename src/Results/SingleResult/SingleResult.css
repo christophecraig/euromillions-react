@@ -1,0 +1,52 @@
+.result {
+  padding: 15px;
+  border: solid 1px;
+  list-style: none;
+}
+.date {
+  text-align: center;
+}
+.myMillion {
+  text-align: center;
+  line-height: 40px;
+  background: darkblue;
+  color: aliceblue;
+  display: block;
+  width: 230px;
+  margin: 15px auto auto;
+}
+
+.numbers {
+  width: 300px;
+  overflow: hidden;
+  float: left;
+  margin-left: calc((100% - 420px) / 2)
+}
+.stars {
+  width: 120px;
+  overflow: hidden;
+}
+
+.number {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #0050CC;
+  color: aliceblue;
+  font-size: 1.5em;
+  float: left; 
+}
+
+.star {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: gold;
+  color: black;
+  font-size: 1.5em;
+  float: left; 
+}
