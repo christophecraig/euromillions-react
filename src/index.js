@@ -10,22 +10,17 @@ import './index.css';
 const routing = (
   <Router>
     <div>
+      <header>
       <nav id="menu">
         <Link to="/last/">Dernier résultat</Link>
         <Link to="/results/">Liste des résultats</Link>
       </nav>
+      </header>
       <Route path="/results/" component={Results} />
       <Route path="/result/:id" component={SingleResult} />
       <Route path="/last/" component={SingleResult} />
     </div>
   </Router>
-)
-
-const menu = (
-  <nav id="menu">
-    <Link to="/last/">Dernier résultat</Link>
-    <Link to="/results/">Liste des résultats</Link>
-  </nav>
 )
 
 ReactDOM.render(
