@@ -24,7 +24,7 @@ const routing = (
 const menu = (
   <nav id="menu">
     <Link to="/last/">Dernier résultat</Link>
-    <Link to="/results">Liste des résultats</Link>
+    <Link to="/results/">Liste des résultats</Link>
   </nav>
 )
 
