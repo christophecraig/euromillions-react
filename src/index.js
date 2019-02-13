@@ -11,12 +11,12 @@ const routing = (
   <Router>
     <div>
       <header>
-      <nav id="menu">
-        <Link to="/last/">Dernier résultat</Link>
-        <Link to="/results/">Liste des résultats</Link>
-      </nav>
+        <nav id="menu">
+          <Link to="/last/">Dernier résultat</Link>
+          <Link to="/">Liste des résultats</Link>
+        </nav>
       </header>
-      <Route path="/results/" component={Results} />
+      <Route exact path="/" component={Results} />
       <Route path="/result/:id" component={SingleResult} />
       <Route path="/last/" component={SingleResult} />
     </div>

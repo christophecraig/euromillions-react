@@ -23,7 +23,7 @@ export class Result extends React.Component {
         <div className='result'>
           <div className='description'>
               <p className='date'>
-                  Tirage du { this.props.resultset.weekday.toLowerCase() } { this.props.resultset.date }
+                  Tirage du { this.props.resultset.weekday.toLowerCase() } { this.props.resultset.date.slice(0, -9).split('-').reverse().join('/') }
               </p>
           </div>
           <div className='numbers'>
@@ -37,7 +37,7 @@ export class Result extends React.Component {
             <div className='star'>{ this.props.resultset.e1 }</div>
             <div className='star'>{ this.props.resultset.e2 }</div>
           </div>
-          <div>Code MyMillion : { this.props.resultset.myMillion }</div>
+          <div className='myMillion'>Code MyMillion : { this.props.resultset.myMillion }</div>
         </div>
       )
   }
